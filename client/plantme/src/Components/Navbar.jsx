@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -103,7 +104,12 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <button className="btn btn-outline btn-success">Sign In</button>
+              <NavLink to="/login" className="btn btn-outline btn-success">
+                Sign In
+              </NavLink>
+              <NavLink to="/register" className="btn btn-outline btn-info">
+                Register
+              </NavLink>
             </div>
           </div>
         </div>
